@@ -14,7 +14,8 @@ export async function generateGithubReportFile(token) {
                 "owner": GITHUB_REPOSITORY_OWNER,
                 token,
                 "project-name": GITHUB_REPOSITORY,
-                "issue-label": "Nuclei Report"
+                "issue-label": "Nuclei Report",
+                "severity-as-label": true 
             }
         }
         const githubConfigYml = yaml.dump(content, {
